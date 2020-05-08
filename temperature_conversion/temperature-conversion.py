@@ -11,6 +11,7 @@ def fahrenheit():
     result = (temperature - 32) / 1.8
     print(f'The temperature {temperature:.1f}°F converted is from {result:.1f}°C')
 
+
 def kelvin_c():
     result = (temperature - 273.15)
     print(f'The temperature {temperature:.1f}K converted is from {result:.1f}°C')
@@ -25,9 +26,11 @@ def fahrenheit_k():
     result = (temperature - 32) * 5/9 + 273.15
     print(f'The temperature {temperature:.1f}°F converted is from {result:.1f}k')
 
+
 def k_fahrenheit():
     result = (temperature - 273.15) * 9/5 + 32
     print(f'The temperature {temperature:.1f}K converted is from {result:.1f}°F')
+
 
 def print_tabela():
     print(
