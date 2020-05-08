@@ -1,44 +1,44 @@
-def linha():
+def line():
     print('-'*50)
 
 
 def celsius():
-    resultado = (temperatura*1.8) + 32
-    print(f'A temperatura {temperatura:.1f}°C convertida é de {resultado:.1f}°F')
+    result = (temperature*1.8) + 32
+    print(f'The temperature {temperature:.1f}°C converted is from {result:.1f}°F')
 
 
 def fahrenheit():
-    resultado = (temperatura - 32) / 1.8
-    print(f'A temperatura {temperatura:.1f}°F convertida é de {resultado:.1f}°C')
+    result = (temperature - 32) / 1.8
+    print(f'The temperature {temperature:.1f}°F converted is from {result:.1f}°C')
 
 
 def print_tabela():
     print(
     '''
-    [1] Celsius(°C) para Fahrenheit(°F)
-    [2] Fahrenheit(°F) para Celsius(°C)
-    [3] para encerrar o programa
+    [1] Celsius(°C) to Fahrenheit(°F)
+    [2] Fahrenheit(°F) to Celsius(°C)
+    [3] to close the program
     '''
     )
     
 while True:
-    linha()
-    print('Qual operação deseja fazer?')
-    linha()
+    line()
+    print('Which operation do you want to do?')
+    line()
     print_tabela()
-    linha()
+    line()
 
-    opcao = int(input('Digite a opção: '))
-    if opcao == 1 or opcao == 2:
-        linha()
-        temperatura = float(input('Digite a temperatura que quer converter: '))
+    option = int(input('Enter the option: '))
+    if option == 1 or option == 2:
+        line()
+        temperature = float(input('Enter the temperature you want to convert: '))
 
-        if opcao == 1:
+        if option == 1:
             celsius()
-        elif opcao == 2:
+        elif option == 2:
             fahrenheit()
-    elif opcao == 3:
-        print('Finalizando..')
+    elif option == 3:
+        print('Finishing..')
         break
     else:
-        print('Comando invalido. ERROR')
+        print('Invalid command. ERROR')
